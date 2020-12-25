@@ -32,7 +32,7 @@ app.get("*", (req, res) => {
 })
 
 app.post("/secret", (req, res) => {
-  if (req.body.username === "johndoe" && req.body.password == "qwerty") {
+  if (req.body.username === "hamid" && req.body.password == "firuzi") {
     res.json({ message: "The sky is blue.", status: "success" })
   } else {
     res.json({ message: "You are not authorized to access this data.", status: "failure" })
